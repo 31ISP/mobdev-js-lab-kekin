@@ -13,3 +13,5 @@ console.log(`${splitdate[2]}.${splitdate[1]}.${splitdate[0]}`)
 
 const stringstring = "Node.js разработчик"
 console.log(`${stringstring.startsWith("Node") && stringstring.endsWith("разработчик") ? "true" : "false"}`)
+
+console.log("42".padStart(8, "0"))
