@@ -1,6 +1,6 @@
 const arr = [4, 5, 3, 5, 2, 4, 5, 3]
-const sum = arr.reduce((arr, n) => arr + n, 0).toFixed (2)
-console.log(sum)
+const sum = arr.reduce((arr, n) => arr + n, 0)
+console.log(sum.toFixed (2))
 
 const event = arr.filter(n => n > 3)
 console.log(event)
@@ -19,7 +19,7 @@ const products = [
   { name: "Наушники", price: 8000 }
 ]
 
-console.log(products.filter(n => n < 10000))
+console.log(products.filter(n => n.price < 10000))
 console.log(products.map(p => p.name))
 console.log(products.reduce((acc, el) => acc + el.price, 0))
 
